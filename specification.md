@@ -16,9 +16,10 @@ Wordpress is an open-source application frequently used in creating websites, bl
 - There must be at least 2 entry points to the MySQL cluster
 - No more than 1 DNSLoadBalancer can be deployed
 - Balancer components must be deployed on a single virtual machine.
+
 The goal is to find a set of virtual machines from the available offers so that all of the required components can be deployed, while minimizing the total rent price (cost) of the virtual machines.
 
-The format of the data files is as follows:
+The format of the input data files is as follows:
 - The first 3 lines contain the number of components, the different types of hardware requirements and the number of virtual machine offers at our disposal.
 - For each virtual machine offer: the cpu, memory and storage capacities.
 - For each component: the cpu, memory and storage required.
