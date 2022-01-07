@@ -23,7 +23,7 @@ In the picture below the constraints specified above are depicted. Additionally,
 
 We want to deploy the Wordpress application in the Cloud at a minimum price. There are various Cloud Providers (e.g. Amazon WS, Microsoft Azure, Google Cloud) which offers virtual machines (VMs) with various hardware/software characteristics at different price (depending on the geographical region). 
 
-The problem can be formalized as follows. We consider a set of $N$ interacting components, \mbox{$C=\{C_1,\ldots, C_N\}$}, to be assigned to a set of $M$ virtual machines, $V=\{V_1, \ldots, V_M\}$. Each component $C_i$ is characterized by a set of requirements concerning the hardware resources. Each virtual machine, $V_k$, is characterized by a \emph{type}, which is comprised by hardware/software characteristics and leasing price. There are also \emph{structural constraints} describing the interactions between components (e.g. Conflict, Exclusive deployment). 
+The problem can be formalized as follows. We consider a set of *N* interacting components, *C = {C1,...,Cn}* , to be assigned to a set of $M$ virtual machines, $V=\{V_1, \ldots, V_M\}$. Each component $C_i$ is characterized by a set of requirements concerning the hardware resources. Each virtual machine, $V_k$, is characterized by a \emph{type}, which is comprised by hardware/software characteristics and leasing price. There are also \emph{structural constraints} describing the interactions between components (e.g. Conflict, Exclusive deployment). 
 
 The problem is to find (output):
 \begin{inparaenum}[\itshape (1)\upshape]
