@@ -23,19 +23,15 @@ In the picture below the constraints specified above are depicted. Additionally,
 
 We want to deploy the Wordpress application in the Cloud at a minimum price. There are various Cloud Providers (e.g. Amazon WS, Microsoft Azure, Google Cloud) which offers virtual machines (VMs) with various hardware/software characteristics at different price (depending on the geographical region). 
 
-The problem can be formalized as follows. We consider a set of *N* interacting components, *C = {C1,...,Cn}* , to be assigned to a set of $M$ virtual machines, $V=\{V_1, \ldots, V_M\}$. Each component $C_i$ is characterized by a set of requirements concerning the hardware resources. Each virtual machine, $V_k$, is characterized by a \emph{type}, which is comprised by hardware/software characteristics and leasing price. There are also \emph{structural constraints} describing the interactions between components (e.g. Conflict, Exclusive deployment). 
+The problem can be formalized as follows. We consider a set of N interacting components, *C = {C<sub>1</sub>,...,C<sub>N</sub>}*, to be assigned to a set of *M* virtual machines, *V=\{V<sub>1</sub>, ..., V<sub>M</sub>}*. Each component C<sub>i</sub> is characterized by a set of requirements concerning the hardware resources. Each virtual machine, V<sub>K</sub>, is characterized by a *type*, which is comprised by hardware/software characteristics and leasing price. There are also *structural constraints* describing the interactions between components (e.g. Conflict, Exclusive deployment). 
 
 The problem is to find (output):
-\begin{inparaenum}[\itshape (1)\upshape]
-\item an assignment of components to VMs, and 
-\item the type of VM
-\end{inparaenum}
+- an assignment of components to VMs, and 
+- the type of VM
 such that:
-\begin{inparaenum}[\itshape (i)\upshape]
-	\item the structural constraints,
-	\item the hardware requirements  (capacity constraints) of all components are satisfied and 
-	\item the purchasing/ leasing price is minimized. 
-\end{inparaenum}
+- the structural constraints and
+- the hardware requirements  (capacity constraints) of all components are satisfied and 
+- the purchasing/ leasing price is minimized. 
 
 For instance, when 3 Wordpress instances are deployed, the problem corresponding
 to 5 components and to a prior estimation of the number of VMs equal to ???, a solution can be (1),
