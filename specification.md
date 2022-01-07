@@ -38,12 +38,10 @@ For instance, when 3 Wordpress instances are deployed, the problem corresponding
 to 5 components and to a prior estimation of the number of VMs equal to 8, a solution can be (1),
 respectively (2).
 
-$$
-\left(\begin{array}{cccccccc}
-0 & 1 & 0 & 0 & 0 & 0 & 1 & 1 \\
-1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
-0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 1 & 0 & 0 & 0 & 0 & 0
-\end{array}\right)
-$$
+<pre>
+0  1  0  0  0  0  1  1
+1  0  0  0  1  0  0  0
+0  0  0  1  0  0  0  0
+0  0  0  0  0  0  0  0
+0  0  1  0  0  0  0  0
+</pre>
