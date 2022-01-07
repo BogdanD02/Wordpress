@@ -35,7 +35,7 @@ such that:
 - the purchasing/ leasing price is minimized. 
 
 For instance, when 3 Wordpress instances are deployed, the problem corresponding
-to 5 components and to a prior estimation of the number of VMs equal to ???, a solution can be (1),
+to 5 components and to a prior estimation of the number of VMs equal to 8, a solution can be (1),
 respectively (2).
 
 add a matrix a obtained from Minizinc
