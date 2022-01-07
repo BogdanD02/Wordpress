@@ -28,6 +28,7 @@ The problem can be formalized as follows. We consider a set of N interacting com
 The problem is to find (output):
 - an assignment of components to VMs, and 
 - the type of VM
+
 such that:
 - the structural constraints and
 - the hardware requirements  (capacity constraints) of all components are satisfied and 
