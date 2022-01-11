@@ -11,7 +11,7 @@ Wordpress (https://wordpress.com) is an open-source application frequently used 
 - Wordpress requires at least 3 instances of MySQL and MySQL can server at most 2 Wordpress instances (Require-Provide constraint).
 - Only one type of balancer must be deployed (Exclusive deployment constraint).
 - As Varnish exhibits load balancing features, it should not be deployed on the same virtual machine as any other balancer (Conflict constraint).
-- Varnish and MySQL should not be deployed on the same virtual machine (Conflict constraint???).
+- Varnish and MySQL should not be deployed on the same virtual machine (Conflict constraint).
 - At least 2 instances of Varnish must be deployed (Deployment with bounded number of instances constraint, in particular lower bound).
 - There must be at least 2 entry points to the MySQL cluster (Deployment with bounded number of instance constraint, in particular lower bound).
 - No more than 1 DNSLoadBalancer can be deployed (Deployment with bounded number of instances constraint, in particular upper bound).
