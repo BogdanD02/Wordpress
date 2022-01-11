@@ -19,7 +19,9 @@ Wordpress (https://wordpress.com) is an open-source application frequently used 
 
 In the picture below the constraints specified above are depicted. Additionally, for each component, the minimum hardware requirements are specified.
 
-<img src="assets/Wordpress.png" alt="assets/Wordpress.png" width="500" style="margin-left:50%;"/>
+<p align="center">
+<img src="assets/Wordpress.png" alt="assets/Wordpress.png" width="500"/>
+</p>
   
 We want to deploy the Wordpress application in the Cloud at a minimum price. There are various Cloud Providers (e.g. Amazon WS, Microsoft Azure, Google Cloud) which offers virtual machines (VMs) with various hardware/software characteristics at different price (depending on the geographical region). 
 
