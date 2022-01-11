@@ -40,9 +40,12 @@ For instance, when 3 Wordpress instances are deployed, the problem corresponding
 to 5 components, as in the figure above and to a prior estimation of the number of VMs equal to 8, the Assignment Matrix can be (1) (rows denoting the components and columns, VMs), and the VM types are (2).
 
 <pre>
-0  1  0  0  0  0  1  1
-1  0  0  0  1  0  0  0
-0  0  0  1  0  0  0  0
-0  0  0  0  0  0  0  0
-0  0  1  0  0  0  0  0
+                  V<sub>1</sub> V<sub>1</sub> V<sub>1</sub> V<sub>1</sub> V<sub>1</sub> V<sub>1</sub> V<sub>1</sub> V<sub>1</sub>
+WordPress         0  0  1  0  0  1  0  1
+MySQL             0  1  0  1  0  0  0  0
+DNS_LoadBalancer  0  0  0  0  0  0  0  0
+HTTP_LoadBalancer 0  0  0  0  0  0  1  0
+Varnish           1  0  0  0  1  0  0  0
+
+
 </pre>
