@@ -29,7 +29,7 @@ The problem can be formalized as follows. We consider a set of N interacting com
 
 The problem is to find (output):
 - an assignment of components to VMs, and 
-- the type of VM
+- the type of acquired VM
 
 such that:
 - the structural constraints and
@@ -37,8 +37,7 @@ such that:
 - the purchasing/ leasing price is minimized. 
 
 For instance, when 3 Wordpress instances are deployed, the problem corresponding
-to 5 components and to a prior estimation of the number of VMs equal to 8, a solution can be (1),
-respectively (2).
+to 5 components, as in the figure above and to a prior estimation of the number of VMs equal to 8, the Assignment Matrix can be (1) (rows denoting the components and columns, VMs), and the VM types are (2).
 
 <pre>
 0  1  0  0  0  0  1  1
