@@ -51,6 +51,6 @@ Varnish           1  0  0  0  1  0  0  0
 and the VM types are:
 
 <pre>
-V<sub>1</sub>   V<sub>2</sub>   V<sub>3</sub>   V<sub>4</sub>    V<sub>5</sub>   V<sub>6</sub>   V<sub>7</sub>   V<sub>8</sub>
+V<sub>1</sub>   V<sub>2</sub>  V<sub>3</sub>  V<sub>4</sub>   V<sub>5</sub>  V<sub>6</sub>  V<sub>7</sub>  V<sub>8</sub>
 15  17  17  17  15  17  15  17
 </pre>
