@@ -40,7 +40,7 @@ For instance, when 3 Wordpress instances are deployed, the problem corresponding
 to 5 components, as in the figure above and to a prior estimation of the number of VMs equal to 8, the Assignment Matrix is:
 
 <pre>
-                  V<sub>1</sub> V<sub>2</sub> V<sub>3</sub> V<sub>4</sub>  V<sub>5</sub>  V<sub>6</sub>  V<sub>7</sub>  V<sub>8</sub>
+                  V<sub>1</sub> V<sub>2</sub> V<sub>3</sub> V<sub>4</sub>  V<sub>5</sub> V<sub>6</sub> V<sub>7</sub> V<sub>8</sub>
 WordPress         0  0  1  0  0  1  0  1
 MySQL             0  1  0  1  0  0  0  0
 DNS_LoadBalancer  0  0  0  0  0  0  0  0
