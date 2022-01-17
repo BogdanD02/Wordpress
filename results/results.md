@@ -4,4 +4,4 @@ The table below shows the average runtime required to solve a problem for a give
 
 | Number of Wordpress Instances | Number of VM Offers | Chuffed | OR-Tools |
 | ----------------------------- | ------------------- | ------- | -------- |
-| 3 | 20 | 0 | 0 |
+|             3 | 20 | 0 | 0 |
