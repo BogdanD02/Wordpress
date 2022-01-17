@@ -27,3 +27,10 @@ However, caution must be taken when combining multiple symmetry breakers. For in
 - Set the components to the first N virtual machines
 - Starting with the (N+1)th VM, all virtual machines must be sorted by their load (e.g. a machine holding 3 components comes before a machine holding 4 components)
 - Starting with the (N+1)th VM, if two virtual machines have the same load, they must be in lexicographic order.
+
+After testing all the possible symmetry breaker combinations, we discovered that the best symmetry breaker for the Wordpress problem, is different based on the solver, as follows:
+
+| Solver | Best Symmetry Breaker |
+| ------ | --------------------- |
+| Chuffed | FVLLX |
+| OR-Tools | LX |
