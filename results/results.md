@@ -16,3 +16,6 @@ The table below shows the average runtime required to solve a problem for a give
 | 5 | 40 | 2310.67s | 426.10s |
 | 6 | 20 | - | 494.06s |
 | 6 | 40 | - | 1175.98s |
+
+This table shows the necessity of using *Symmetry Breaking* techniques. This implies that we add aditional constraints, thus aiming to reduce the number of symmetrical solutions and the searching space (two solutions are considered symmetrical if the total leasing price is the same, but they have different assignment matrices).
+
