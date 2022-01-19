@@ -17,13 +17,13 @@ The table below shows the average runtime required to solve a problem for a give
 | 6 | 20 | - | 494.06s |
 | 6 | 40 | - | 1175.98s |
 
-This table shows the necessity of using *Symmetry Breaking* techniques. They imply the addition of constraints, aiming to reduce the number of symmetrical solutions and the searching space (two solutions are considered symmetrical if the total leasing price is the same, but they have different assignment matrices). ????
+This table shows that the two solvers do not scale well for a high number of Wordpress instances. Therefore the reduction of the searching space becomes a priority. This can be done by using *symmetry breaking* techniques, in particular static symmetry breaking. They imply the addition of constraints, aiming to reduce the number of symmetrical solutions (in our case, two solutions are considered symmetrical if the total leasing price is the same, but they have different assignment matrices).
 
-One such symmetry breaker is the *Fixed Value (FV)*. Given all the components and the list of conflicts a directed conflict graph can be built (as seen in the figure below). Based on this graph we can allocate a set of components (in our case MySQL, a LoadBalancer and Varnish) to consecutive virtual machines, one component per machine. 
+One such symmetry breaker is the *Fixed Value (FV)*. Given all the components and the list of conflicts, a conflict graph can be built, using components as vertices and conflicts between them as edges (as seen in the figure below). Based on this graph we can determine a clique with maximum deployment size in which all components are pairwise conflictual, hence cannot be placed on the same virtual machine. Using this clique we can allocate those components (in the figure below MySQL, HTTP_LoadBalancer and Varnish) to consecutive virtual machines, one instance per machine. 
 
 INSERT FIGURE
 
-However, caution must be taken when combining multiple symmetry breakers. For instance, when combining Fixed Value (FV) with Load (L) and the Lexicographic (LX) symmetry breakers, the latter two shall not act on the machines used by the FV tehnique. So the FVLLX tehnique goes as follows:
+However, caution must be taken when combining multiple symmetry breakers. For instance, when combining Fixed Value (FV) with Load (L) and the Lexicographic (LX) symmetry breakers, the latter two shall not act on the machines used by the FV technique. So the FVLLX tehnique goes as follows:
 - Set the components to the first N virtual machines
 - Starting with the (N+1)th VM, all virtual machines must be sorted by their load (e.g. a machine holding 3 components comes before a machine holding 4 components)
 - Starting with the (N+1)th VM, if two virtual machines have the same load, they must be in lexicographic order.
