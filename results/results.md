@@ -34,5 +34,3 @@ After testing all the possible symmetry breaker combinations, we discovered that
 | ------ | --------------------- |
 | Chuffed | FVLLX |
 | OR-Tools | LX |
-
-All the results can be found [here](https://github.com/BogdanD02/Cloud-Resource-Provisioning).
