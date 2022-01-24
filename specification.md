@@ -23,21 +23,23 @@ In the picture below the constraints specified above are depicted. Additionally,
 <img src="assets/Wordpress.png" alt="assets/Wordpress.png" width="500"/>
 </p>
   
-We want to deploy the Wordpress application in the Cloud at a minimum price. There are various Cloud Providers (e.g. Amazon WS, Microsoft Azure, Google Cloud) which offers virtual machines (VMs) with various hardware/software characteristics at different price (depending on the geographical region). 
+We want to deploy the Wordpress application in the Cloud at a minimum price. There are various Cloud Providers (e.g. Amazon WS, Microsoft Azure, Google Cloud) which offer virtual machines (VMs) with various hardware/software characteristics at different price (depending on the geographical region). 
 
-The problem can be formalized as follows. We consider a set of N interacting components, *C = {C<sub>1</sub>,...,C<sub>N</sub>}*, to be assigned to a set of *M* virtual machines, *V=\{V<sub>1</sub>, ..., V<sub>M</sub>}*. Each component C<sub>i</sub> is characterized by a set of requirements concerning the hardware resources. Each virtual machine, V<sub>K</sub>, is characterized by a *type*, which is comprised by hardware/software characteristics and leasing price. There are also *structural constraints* describing the interactions between components (e.g. Conflict, Exclusive deployment). 
+The problem can be formalized as follows. We consider a set of *N* interacting components, *C = {C<sub>1</sub>,...,C<sub>N</sub>}*, to be assigned to a set of *M* virtual machines, *V=\{V<sub>1</sub>, ..., V<sub>M</sub>}*. Each component *C<sub>i</sub>* is characterized by a set of requirements concerning the hardware resources. Each virtual machine, *V<sub>K</sub>*, is characterized by a *type*, which is comprised by hardware/software characteristics and leasing price. There are also *structural constraints* describing the interactions between components (e.g. Conflict, Exclusive deployment). 
 
 The problem is to find (output):
 - an assignment of components to VMs, and 
-- the type of acquired VM
+- the type of acquired VMs
 
 such that:
 - the structural constraints and
 - the hardware requirements  (capacity constraints) of all components are satisfied and 
 - the purchasing/ leasing price is minimized. 
 
-For instance, when 3 Wordpress instances are deployed, the problem corresponding
-to 5 components, as in the figure above and to a prior estimation of the number of VMs equal to 8, the Assignment Matrix is:
+For example, when 3 Wordpress instances are deployed (the problem corresponds
+to 5 components as in the figure above), a prior estimation of the number of VMs is equal to 8. The output consists of the Assignment Matrix and the VM types. 
+
+The Assignment Matrix is:
 
 <pre>
                   V<sub>1</sub> V<sub>2</sub> V<sub>3</sub> V<sub>4</sub>  V<sub>5</sub> V<sub>6</sub> V<sub>7</sub> V<sub>8</sub>
