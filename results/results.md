@@ -21,7 +21,7 @@ This table shows that the two solvers do not scale well for a high number of Wor
 
 One such symmetry breaker is the *Fixed Value (FV)*. Given all the components and the list of conflicts, a conflict graph can be built, using components as vertices and conflicts between them as edges (as seen in the figure below). Based on this graph we can determine a clique with maximum deployment size in which all components are pairwise conflictual, hence cannot be placed on the same virtual machine. Using this clique we can allocate those components (in the figure below MySQL, HTTP_LoadBalancer and Varnish) to consecutive virtual machines, one instance per machine. 
 
-INSERT FIGURE HERE
+<img src = "assets/Screenshot (88).png">
 
 However, caution must be taken when combining multiple symmetry breakers. For instance, when combining Fixed Value (FV) with Load (L) and the Lexicographic (LX) symmetry breakers, the latter two shall not act on the machines used by the FV technique. So the FVLLX tehnique goes as follows:
 - Set the components in the clique to the first K virtual machines, where K is the total number of component instances (FV)
